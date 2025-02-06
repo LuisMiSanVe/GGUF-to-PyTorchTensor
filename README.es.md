@@ -1,80 +1,62 @@
-> [Ver en ingles/See in english](https://github.com/LuisMiSanVe/template-repos/blob/main/README.md)
-# 😀 Titulo del Repositorio
-[![image](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)](https://dotnet.microsoft.com/en-us/languages/csharp)
-[![image](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
-[![image](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![image](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://www.newtonsoft.com/json)
-[![image](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
-[![image](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://aistudio.google.com/app/apikey)
-[![image](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://visualstudio.microsoft.com/)
-[![image](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)](https://jwt.io/introduction)
-[![image](https://img.shields.io/badge/apache%20netbeans-1B6AC6?style=for-the-badge&logo=apache%20netbeans%20IDE&logoColor=white)](https://netbeans.apache.org/front/main/index.html)
-[![image](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
-[![image](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-[![image](https://img.shields.io/badge/Xampp-F37623?style=for-the-badge&logo=xampp&logoColor=white)](https://www.apachefriends.org/es/index.html)
-[![image](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=Apache&logoColor=white)](https://httpd.apache.org/)
-[![image](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+> [Ver en ingles/See in english](https://github.com/LuisMiSanVe/GGUF-to-PyTorchTensor/blob/main/README.md)
+# 💾 Script de GGUF a PyTorch Tensor
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![image](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
-[![image](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)]()
-[![image](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
-[![image](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)](https://console.firebase.google.com/)
-[![image](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio)
-[![image](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/studio)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
+[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 
->[!NOTE]
-> NOTA
-
-> [!WARNING]
-> ADVERTENCIA
-
-> ANOTACION
-
-DESCRIPCION BREVE
-
-<img src="https://github.com/LuisMiSanVe/LuisMiSanVe/blob/main/Resources/ShopManager/image.png" width="50" alt="Alt de Imagen">
-
-```
-CODIGO
-```
-
-## 📝 Explicación de Tecnología
-Explicacion
+Este Script coge un Modelo GGUF y extrae su Peso para convertirlo en NumPy y PyTorch Tensor.
 
 ## 📋 Prerequisitos
-Prerequisitos
+Antes de nada, necesitas el Modelo GGUF.\
+Puedes conseguir uno en [HuggingFace](https://huggingface.co/) o usando otros programas como [LM Studio](https://lmstudio.ai/) para conseguir un modelo.
+
+Tambien, asegurate que tienes [Python](https://www.python.org/) instalado y clona el Script .py del repositorio.
 
 ## 🛠️ Instalación
-Instalación
+Puedes preparar el proceso de dos formas:
+- Ve al repositorio de *llama.cpp* y [compila](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md) o descargalo ya [compilado](https://github.com/ggerganov/llama.cpp/releases).\
+  Para compilarlo, necesitarás [CMAKE](https://cmake.org/), y en caso que tengas una GPU de Nvidia y quieres usarla, asegurate de tener instalado tambien el [Toolkit de CUDA](https://developer.nvidia.com/cuda-toolkit).
+  Sigue la guia de compilacion que se adecue más a tu sistema.\
+  Instala las dependencias necesarias con el siguiente comando en el CMD:
+```
+cd llama.cpp
+pip install -r requirements.txt
+```
+O si te falla o tienes una versión más nueva de Python:
+```
+cd llama.cpp
+py -m pip install -r requirements.txt
+``` 
+Entonces, deja el Script y el modelo GGUF en `llama.cpp\gguf-py\gguf` para que encuentre la referencia de la *librería de gguf* necesaria para el proceso.
 
+- Simplemente instala estas librerias de Python en el CMD: torch, numpy, sentencepiece, pyyaml y gguf
+```
+pip install torch numpy sentencepiece pyyaml gguf
+```
+O si te falla o tienes una versión más nueva de Python:
+```
+py -m pip install torch numpy sentencepiece pyyaml gguf
+``` 
+Asegurate que el Script y el modelo GGUF están en la misma carpeta.
 ## 🚀 Explicación de uso del proyecto
-Uso
-
-## 📖 Sobre el proyecto
-Sobre
+Ejecuta el Script `gguftopytorch.py` en un terminal usando el comando `py` o `python` o en un IDE como *Visual Studio Code* con la [Extensión de Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) para guardar el Peso de GGUF a PyTorch Tensor.
 
 ## 📂 Archivos
-Archivos
-
-## 🎨 Opciones de Personalización
-Opciones
-
-## 🚀 Lanzamientos
-Una versión será lanzada solo cuando se cumplan los siguientes puntos:
-- Una nueva versión saldrá cuando algún cambio importante haya sido agregado.
-Si algún error se arregla en el respositorio, en vez de lanzar una versión con el arreglo inmediatamente, se esperará una semana desde que se hizo el arreglo para sacarla.
-  - Razón: Este tiempo de espera permite la inclusion de arreglos de otros bug que puedan aparecer, reduciendo la necesidad de sacar multiples versiones consecutivamente para arreglos individuales.
-  - Excepción: En casos que se presente un error crítico que afecte al funcionamiento del proyecto, un lanzamiento inmediato puede ser considerado.
-
-El número de la versión seguirá este formato: \
-\[Añadido Importante\].\[Añadido Menor\].\[Arreglo de Errores\]
+Si el Script se ejecuta correctamente, aparecerán dos nuevos archivos en esa carpeta:
+- <b>llama-weight.npy</b>: Archivo de NumPy con el Peso del Modelo GGUF de LlaMA guardado. 
+- <b>PyTorchTensor.pt</b>: Archivo de PyTorch Tensor con el NumPy convertido en Tensor.
 
 ## 💻 Tecnologías usadas
-- Lenguaje de programación: [C#](https://dotnet.microsoft.com/en-us/languages/csharp) [Java](https://www.java.com/) [PHP](https://www.php.net/)
-- Probado en: [Ubuntu](https://ubuntu.com/)
-- Framework: [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet) (Project built with [.Net](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) Framework)
-- Plantilla: Empty Views Activity
-- API de Android:
-- Librerías:
-- Paquetes NuGet:
-- Otros:
-- IDE Recomendado: [Visual Studio](https://visualstudio.microsoft.com/) [NetBeans](https://netbeans.apache.org/front/main/index.html) [VS Code](https://code.visualstudio.com/) [Gedit](https://help.gnome.org/users/gedit/stable/gedit-quickstart.html.en) [Android Studio](https://developer.android.com/studio)
+- Lenguaje de programación: [Python](https://www.python.org/) (3.13.2)
+- Librerias:
+  - [torch](https://pypi.org/project/torch/) (2.6.0)
+  - [numpy](https://numpy.org/) (2.2.0)
+  - [sentencepiece](https://pypi.org/project/sentencepiece/) (0.2.0)
+  - [pyyaml](https://pypi.org/project/PyYAML/) (6.0.2)
+  - [gguf](https://pypi.org/project/gguf/) (0.14.0)
+- Otro:
+  - [CMAKE](https://cmake.org/) (3.31.5)
+  - [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) (12.8)
+  - [VS Code Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- IDE Recomendado: [VS Code](https://code.visualstudio.com/)
