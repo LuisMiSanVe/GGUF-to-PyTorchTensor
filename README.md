@@ -29,7 +29,22 @@
 
 > ANNOTATION
 
-BRIEF DESCRIPTION
+Use or Get a LlaMA Model (GGUF) from Hugging Face or in the download Manager of LM Studio.
+
+clone the PY script and install Python
+
+-- Method 1
+Install/build llama.cpp https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md / https://github.com/ggerganov/llama.cpp/releases
+Youll need cmake to build it
+If you have a NVIDIA GPU, use de CUDA compilation method, which requires CUDA Toolkit https://developer.nvidia.com/cuda-toolkit
+else use CPU or the method that fits the best in your system.
+install the dependencies: get into llama.cpp folder and run pip install -r requirements.txt or py -m pip install -r requirements.txt
+place them in llama.cpp\gguf-py\gguf along with your GGUF model
+
+-- Method 2
+Install the libraries torch, numpy, sentencepiece, pyyaml and gguf
+
+run the scripts, gguftopytorch.py to save GGUF weigths to PyTorch Tensor
 
 <img src="https://github.com/LuisMiSanVe/LuisMiSanVe/blob/main/Resources/ShopManager/image.png" width="50" alt="Image Alt">
 
