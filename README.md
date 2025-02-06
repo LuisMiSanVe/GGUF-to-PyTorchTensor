@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![image](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
-[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)]()
+[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
 
 This Script takes a GGUF model and extracts it's Weight then converts it to NumPy and PyTorch Tensor.
 
@@ -15,7 +15,7 @@ Then, make sure you have [Python](https://www.python.org/) installed and clone t
 
 ## 🛠️ Setup
 You can setup the process in two ways:
-- Go to the *llama.cpp* and either [build](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md) or download the [compiled](https://github.com/ggerganov/llama.cpp/releases).\
+- Go to the *llama.cpp* repos and either [build](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md) or download the [compiled](https://github.com/ggerganov/llama.cpp/releases).\
   To build it, you'll need [CMAKE](https://cmake.org/), and in case you use a NVIDIA GPU and you want to use it, make sure you have the [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) installed too.
   Follow the build guide that fits the best for your system.\
   Install the necessary dependencies with the following command in a CMD:
