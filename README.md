@@ -40,7 +40,7 @@ py -m pip install torch numpy sentencepiece pyyaml gguf
 ``` 
 Make sure the Script and the GGUF Model is in the same folder.
 ## 🚀 Project Usage Explanation
-Run the Script `gguftopytorch.py` in the terminal usign the `py` or `python` command in the CMD or in an IDE like *Visual Studio Code* with the [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) to save GGUF Weigths to PyTorch Tensor.
+Run the Script `gguftopytorch.py` in the terminal using the `py` or `python` command in the CMD or in an IDE like *Visual Studio Code* with the [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) to save GGUF Weigths to PyTorch Tensor.
 
 ## 📂 Files
 If the Script runs succesfully, it will generate two files in the same folder:
