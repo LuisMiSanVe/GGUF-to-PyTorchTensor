@@ -1,4 +1,4 @@
-> [See in spanish/Ver en español](https://github.com/LuisMiSanVe/template-repos/blob/main/README.es.md)
+> [See in spanish/Ver en español](https://github.com/LuisMiSanVe/GGUF-to-PyTorchTensor/blob/main/README.es.md)
 # 💾 GGUF to PyTorch Tensor Script
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![image](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
